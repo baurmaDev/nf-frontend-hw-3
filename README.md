@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📝 Posts List App
 
-## Getting Started
+Welcome to the Media App project! This repository is designed for students to practice their React skills by building a functional  application. The tasks are divided into three levels: Basic, Medium, and Hard. Each level introduces new concepts and challenges to enhance your understanding of React.
 
-First, run the development server:
+### Links
+1. https://www.figma.com/design/7oTkQsdn1fl6sYB2b9hKNd/nFactorial-Web-Course?node-id=9-578&t=jHQoUmCnN3Kfuh8S-0
+2. https://medium.com
+3. https://dummyjson.com/docs
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📚 Table of Contents
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Getting Started](#getting-started)
+- [Basic Level](#basic-level)
+- [Medium Level](#medium-level)
+- [Hard Level](#hard-level)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🚀 Getting Started
 
-## Learn More
+To get started with this project, follow these steps:
 
-To learn more about Next.js, take a look at the following resources:
+1. Fork this repository to your GitHub account.
+2. Clone the repository to your local machine:
+   git clone https://github.com/your-username/todo-list-app.git
+    3. Install dependencies:
+       cd todo-list-app
+       npm install
+    4. Start the development server:
+       npm run dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🥇 Basic Level
 
-## Deploy on Vercel
+In the Basic level, you will implement the core interface of application.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Tasks
+- [ ] Fetch all posts using axios
+- [ ] Implement posts design on main page.
+- [ ] Implement routing to detailed post page using dynamic routes.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 🥈 Medium Level
+
+### Tasks
+- [ ] Create AuthContext that checks if the user is authenticated. If the user is not authenticated, they will be redirected to the login page.
+- [ ] Create Login Page that sends request to 'https://dummyjson.com/auth/login' in order to get auth token.
+- [ ] Rewrite all your axios requests by passing auth token (check Authorizing Resources 'https://dummyjson.com/docs#intro-auth'). 
+    Example: 'https://dummyjson.com/auth/posts'
+
+
+## 🥇 Hard Level
+
+### Tasks
+- [ ] Implement axios interceptor to pass auth token with requests.
+- [ ] Handle API errors in axios interceptor response.
+- [ ] Create ThemeToggle button that changes the theme of your application from dark/light to light/dark using Context API
+- [ ] Implement ADD, UPDATE, DELETE post features
+
+
+Happy coding! 🎉
